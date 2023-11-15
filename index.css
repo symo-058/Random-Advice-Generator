@@ -1,0 +1,78 @@
+body{
+    background-color: hsl(218, 23%, 16%);
+    justify-content: center;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+
+.advice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    margin-top: 25%;
+    background-color: hsl(217, 19%, 24%);
+    height: 270px;
+    border-radius: 10px;
+    
+}
+
+button{
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 235px;
+    border: none;
+    margin-top: 270px;
+    position: fixed;
+    height: 4rem;
+    width: 4rem;
+}
+
+button img {
+    padding: 16px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+}
+
+.pattern-divider-mobile {
+    width: 80%;
+    margin-top: 230px;
+    position: fixed;
+}
+
+#advice-heading {
+    font-size: 10px;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 0.2rem;
+}
+
+.quote, .quote1 {
+    color: hsl(193, 38%, 86%);
+    font-size: 25px;
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 70px 10px hsl(150, 100%, 66%);
+    
+}
+
+button:active {
+    box-shadow: none;
+}
+
+
+@media(min-width:576px){
+    .advice{
+        margin: 400px;
+        margin-top: 150px;
+        margin-bottom: 0;
+    }
+
+    .pattern-divider-mobile{
+        content: url(./images/pattern-divider-desktop.svg);
+        width: 35%;
+    }
+}
